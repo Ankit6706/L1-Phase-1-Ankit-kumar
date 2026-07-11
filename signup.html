@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        color: #000000;
+        font-size: 16px;
+        background-color: #F1F3F4;
+    }
+    #container{
+        width: 615px;
+        height: 730px;
+        margin-top: 137px;
+        margin-left: 413px;
+        border-radius: 30px;
+        border: 1px solid #F1F3F4;
+        background-color: #FBFBFF;
+        box-shadow: 0px -5px 4px 0px #4ECDC4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .inp{
+        width: 224px;
+        height: 56.04px;
+        padding-left: 30px;
+        border-radius: 15px;
+        border: 1px solid #4ECDC4;
+        background-color: #F1F3F4;
+    }
+    #mail{
+        width: 490px;
+        height: 56.04px;
+        padding-left: 30px;
+        border-radius: 15px;
+        border: 1px solid #4ECDC4;
+        background-color: #F1F3F4;
+    }
+    .btn{
+        background-color: #4ECDC4;
+        border: 1px solid #4ECDC4;
+        width: 522px;
+        height: 56.04px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FBFBFF;
+    }
+    label{
+        margin:0px 0px 0px 13px;
+        font-weight: bold;
+    }
+    input{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #use{
+        width: 522px;
+        margin-top: -10px;
+    }
+    #check span{
+        margin-left: 2px;
+    }
+    #check{
+        width: 522px;
+        margin-top: -5px;
+    }
+    #heading{
+        width: 522px;
+        font-size: 32px;
+        margin-bottom: -5px;
+        font-weight: bold;
+    }
+    #sgn{
+        width: 522px;
+        margin: 0px 0px 30px 0px;
+    }
+    a{
+        color: #4ECDC4;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <form onsubmit="checkx()">
+        <div id="container">
+            <p id="heading">Create your account</p>
+            <p id="sgn">Sign up to access the practice dashboard</p>
+            <div>
+                <label for="">First Name:</label>
+                <br>
+                <input style="margin-right: 10px;" type="text" class="inp" id="fname" placeholder="Enter First Name">
+            </div>
+            <div>
+                <label for="" >Last Name:</label>
+                <br>
+                <input type="text" class="inp" id="lname" placeholder="Enter Last Name">
+            </div>
+            <div>
+                <label for="">Email Address:</label>
+                <br>
+                <input type="email" id="mail" placeholder="Enter your email address">
+            </div>
+            <div>
+                <label for="">Password:</label>
+                <br>
+                <input style="margin-right: 10px;" type="password" id="pass" class="inp" placeholder="Create Password">
+            </div>
+            <div>
+                <label for="">Confirm Password:</label>
+                <br>
+                <input type="password" id="conf" class="inp" placeholder="Confirm password">
+            </div>
+            <p id="use">Use at least 8 characters,<br>with letter and number</p>
+            <div id="check">
+                <input type="checkbox" id="checkb">
+                <span>I agree to the Terms</span>
+            </div>
+            <button class="btn" type="submit">Create Account</button>
+            <p style="width: 522px;">Already have account?<a href="./login.html">Sign in</a></p>
+        </div>
+    </form>
+    <script>
+        function checkx(){
+            let first=document.getElementById("fname").value;
+            let last=document.getElementById("lname").value;
+            let mail=document.getElementById("mail").value;
+            let password=document.getElementById("pass").value;
+            let confirm=document.getElementById("conf").value;
+            let checkbox=document.getElementById("checkb");
+
+            if(first==""||last==""||mail==""||password==""||confirm==""){
+                alert("All fields are mandatory");
+            }
+            else if(first.length<2||last.length<2){
+                alert("Enter valid Name");
+            }
+            else if(password<8){
+                alert("Password must be of at least 8 character's");
+            }
+            else if(confirm!=password){
+                alert("Password and confirm password must be same");
+            }
+            else if(!checkbox.checked){
+                alert("please read terms & conditions");
+            }
+            else{
+                alert("Account created successfully")
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

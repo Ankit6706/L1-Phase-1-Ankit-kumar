@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 16px;
+        font-family: sans-serif;
+        background-color: whitesmoke;
+        display: flex;
+        margin: 0px;
+    }
+    #left{
+        width: 27%;
+        height:1024px;
+        background-color: ghostwhite;
+        border: 1px solid #4ECDC4;
+    }
+    #profile{
+        display: flex;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    #picture{
+        width: 35px;
+        height: 35px;
+        background-color: #0A2363;
+        border: 1px solid #0A2363;
+        border-radius: 10px;
+        color: ghostwhite;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #picture p{
+        margin-top: 8px;
+    }
+    #user{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    #user p{
+        margin: 0px;
+    }
+    .navtitle{
+        margin-left: 20px;
+        color: rgb(53, 49, 49);
+        margin-bottom: 25px;
+        margin-top: 40px;
+    }
+    .dashcont{
+        width: 180px;
+        margin-left: 30px;
+        padding-left: 20px;
+        border: 1px solid #4ECDC4;
+        border-left-width: 4px;
+        border-radius: 15px;
+        background-color: whitesmoke;
+        color: rgb(53, 49, 49);
+        margin-bottom: 30px;
+        font-size: small;
+    }
+    .dashcontx{
+        width: 180px;
+        margin-left: 30px;
+        padding-left: 24px;
+        color: rgb(53, 49, 49);
+        margin-bottom: 30px;
+        font-size: small;
+    }
+    #right{
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    #header{
+        background-color: #0A2363;
+        width: 100%;
+        color: ghostwhite;
+        margin: 0px;
+        padding: 15px;
+    }
+    #content{
+        width: 90%;
+        box-shadow: 0px -2px 5px 3px #4ECDC4;
+        margin-top: 40px;
+        margin-left: 20px;
+        padding-left: 40px;
+        border-radius: 15px;
+        background-color: ghostwhite;
+        padding-top: 10px;
+    }
+    #content h2{
+        margin-bottom: 40px;
+    }
+    #topcont{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #topcont div{width: 47%;}
+    label{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    input{
+        width: 90%;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: whitesmoke;
+        border: 1px solid whitesmoke;
+        margin-left: 0px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    #bottomcont{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #bottomcont div{width: 47%;}
+    button{
+        width: 200px;
+        height: 56px;
+        border-radius: 15px;
+        border: 1px solid #4ECDC4;
+        font-weight: bold;
+        background-color: whitesmoke;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    #btn{
+        width: 95%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+</style>
+<body>
+    <div id="left">
+        <div id="profile">
+            <div id="picture">
+                <p>DU</p>
+            </div>
+            <div id="user">
+                <p><b>Demo User</b></p>
+                <p>demo@webtech.practice</p>
+            </div>
+        </div>
+        <br>
+        <hr style="border: 1px solid #4ECDC4;">
+        <p class="navtitle"> DASHBOARD</p>
+        <div class="dashcontx"><p>Overview</p></div>
+        <div class="dashcont"><p>Profile Settings</p></div>
+        <div class="dashcontx"><p>Security</p></div>
+        <div class="dashcontx"><p>Notification</p></div>
+        <p class="navtitle"> QUICK ACTION</p>
+        <div class="dashcontx"><p>Help & Support</p></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p class="navtitle"> ACCOUNT</p>
+        <div class="dashcontx"><p>Sign out</p></div>
+    </div>
+    <div id="right">
+        <h2 id="header">WebTech Practice Dashboard</h2>
+        <div id="content">
+            <h2>Profile Settings</h2>
+            <h3>Personal information</h3>
+            <div id="topcont">
+                <div style="margin-right: 20px;">
+                    <label for="">Full Name</label>
+                    <br>
+                    <input type="text" placeholder="Demo User">
+                </div>
+                <div>
+                    <label for="">Date of Birth</label>
+                    <br>
+                    <input type="date" placeholder="dd-mm-yy">
+                </div>
+                <div style="margin-right: 20px;">
+                    <label for="">Email Address</label>
+                    <br>
+                    <input type="email" placeholder="demo@gmail.com">
+                </div>
+                <div>
+                    <label for="">Phone Number</label>
+                    <br>
+                    <input type="number" placeholder="+91 9876543210">
+                </div>
+            </div>
+            
+            <h3>Address Information</h3>
+            <div id="bottomcont">
+                <div style="width: 100%;">
+                    <label for="">Street Address</label>
+                    <br>
+                    <input style="padding-right: 30px;" type="text" placeholder="Enter your complete address">
+                </div>
+                <div style="margin-right: 20px;">
+                    <label for="">PIN Code</label>
+                    <br>
+                    <input type="number" placeholder="123456">
+                </div>
+                <div>
+                    <label for="">City</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <div style="margin-right: 20px;">
+                    <label for="">Country</label>
+                    <br>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Github Profile</label>
+                    <br>
+                    <input type="text">
+                </div>
+            </div>
+            <div id="btn">
+                <button style="background-color: #4ECDC4;color: ghostwhite;">Save changes</button>
+                <button style="margin-right: 10px;">Cancel changes</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
