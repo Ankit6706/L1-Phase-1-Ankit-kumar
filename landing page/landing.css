@@ -1,0 +1,135 @@
+
+    body{
+        background-color: whitesmoke;
+        color: rgb(31,30,36);
+        font-family: sans-serif;
+        margin: 0px;
+    }
+    #header{
+        display: flex;
+        background-color: #0A2363;
+        color: ghostwhite;
+        justify-content: center;
+        align-items: center;
+    }
+    #header h2{
+        margin-right: 20%;
+    }
+    .nav{
+        border: 1px solid rgb(24, 226, 226);
+        border-radius: 8px;
+        height: 20px;
+        padding: 5px 15px;
+        margin-left: 5px;
+        color: ghostwhite;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: rgb(24, 226, 226);
+        box-shadow: 0px 2px 15px 8px rgba(0, 0, 0, 0.20);
+    }
+    #top{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    #top1{
+        width: 35%;  
+    }
+
+    #top2{
+        
+        width: 40%;
+        border-width: 4px 1px 2px 1px ;
+        border-style: solid;
+        border-color: rgb(10,35,99) grey grey grey;
+        margin-left: 5%;
+        border-radius: 15px;
+        background-color: ghostwhite;
+    }
+    #jjj{
+        display: flex;
+    }
+    #trans{
+        display: flex;
+        justify-content: center;
+    }
+    .trans{
+        height: 5px;
+        width: 20px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: grey;
+        margin: 5px;
+    }
+    .heading{
+        font-size: xx-large;
+        text-align: left;
+    }
+    .abtn{
+        height: 30px;
+        width: 50px;
+        margin: 10px;
+        border-radius: 8px;
+        align-self: center;
+        background-color: rgb(24, 226, 226);
+        border: 0px;
+    }
+    #mid{
+        width: 50%;
+        margin-left: 25%;
+        
+    }
+    .midpart{
+        border: 1px solid rgb(24, 226, 226);
+        padding: 10px;
+        border-radius: 8px;
+        background-color: ghostwhite;
+        text-align: center;
+    }
+    #bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bottomx{
+        width: 25%;
+        border-width: 1px 1px 4px 1px;
+        border-color: rgb(24, 226, 226);
+        border-style: solid;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 5px;
+        background-color: ghostwhite;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(10,35,99);
+        color: ghostwhite;
+        padding: 20px 50px;
+        margin-top: 100px;
+    }
+    #jjj p{
+        padding: 50px;
+    }
+    #jjj b{
+        font-size: x-large;
+    }
+    .btn1{
+        background-color: rgb(24, 226, 226);
+        color: whitesmoke;
+        padding: 10px; 
+        border-radius: 10px; 
+        border-color: transparent;
+    }
+    .btn2{
+        background-color: transparent; 
+        border: 1px solid rgb(24, 226, 226);
+        padding: 10px;
+        border-radius: 10px;
+    }
