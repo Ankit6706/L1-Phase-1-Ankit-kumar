@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+</head>
+<body>
+    <form onsubmit="checkx()">
+        <div id="container">
+            <div id="CYA">
+                <p id="heading">Create your account</p>
+                <p class="sgn">Sign up to access the practice dashboard</p>
+            </div>
+            <div>
+                <label for="">First Name:</label>
+                <br>
+                <input type="text" class="inp inp13" id="fname" placeholder="Enter First Name">
+            </div>
+            <div>
+                <label for="" >Last Name:</label>
+                <br>
+                <input type="text" class="inp" id="lname" placeholder="Enter Last Name">
+            </div>
+            <div>
+                <label for="">Email Address:</label>
+                <br>
+                <input type="email" id="mail" placeholder="Enter your email address">
+            </div>
+            <div>
+                <label for="">Password:</label>
+                <br>
+                <input type="password" id="pass" class="inp inp13" placeholder="Create Password">
+            </div>
+            <div>
+                <label for="">Confirm Password:</label>
+                <br>
+                <input type="password" id="conf" class="inp" placeholder="Confirm password">
+            </div>
+            <p id="use">Use at least 8 characters,<br>with letter and number</p>
+            <div id="check">
+                <input type="checkbox" id="checkb" checked>
+                <span>I agree to the Terms</span>
+            </div>
+            <button class="btn" type="submit">Create Account</button>
+            <p class="sgn" >Already have account?<a href="../login/login.html">Sign in</a></p>
+        </div>
+    </form>
+</body>
+</html>
