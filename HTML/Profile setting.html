@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS_Files/profile setting.css">
+</head>
+<body>
+    <div id="left">
+        <div id="profile">
+            <div id="picture">
+                <p>DU</p>
+            </div>
+            <div id="user">
+                <p><b id="username">Demo User</b></p>
+                <p id="usermail">demo@webtech.practice</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <p class="navtitle"> DASHBOARD</p>
+        <div class="dashcontx"><p><a href="./dashboard.html">Overview</a></p></div>
+        <div class="dashcont"><p><a href="./Profile setting.html">Profile Settings</a></p></div>
+        <div class="dashcontx"><p><a href="./security.html">Security</a></p></div>
+        <div class="dashcontx"><p><a href="./Notificaton.html">Notification</a></p></div>
+        <p class="navtitle"> QUICK ACTION</a></p>
+        <div class="dashcontx"><p><a href="./help.html">Help & Support</a></p></div>
+        <br><br><br><br>
+        <p class="navtitle"> ACCOUNT</p>
+        <div class="dashcontx" onclick="logout()"><p><a>Sign out</a></p></div>
+    </div>
+    <div id="right">
+        <h2 id="header">WebTech Practice Dashboard</h2>
+        <div id="content">
+            <h2>Profile Settings</h2>
+            <h3>Personal information</h3>
+            <div id="topcont">
+                <div class="inp13">
+                    <label for="">Full Name</label>
+                    <br>
+                    <input type="text" id="fullname">
+                </div>
+                <div>
+                    <label for="">Date of Birth</label>
+                    <br>
+                    <input type="date" id="dob" placeholder="dd-mm-yy">
+                </div>
+                <div class="inp13">
+                    <label for="">Email Address</label>
+                    <br>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="">Phone Number</label>
+                    <br>
+                    <input type="tel" id="phone" placeholder="Add phone Number" pattern="[0-9]{10}">
+                </div>
+            </div>
+            
+            <h3>Address Information</h3>
+            <div id="bottomcont">
+                <div class="street" style="width: 100%;">
+                    <label for="">Street Address</label>
+                    <br>
+                    <input type="text" id="address" placeholder="Enter your complete address">
+                </div>
+                <div class="inp13">
+                    <label for="">PIN Code</label>
+                    <br>
+                    <input type="number" id="pin" placeholder="Pincode">
+                </div>
+                <div>
+                    <label for="">City</label>
+                    <br>
+                    <input type="text" id="city" placeholder="City">
+                </div>
+                <div class="inp13">
+                    <label for="">Country</label>
+                    <br>
+                    <input type="text" id="country" placeholder="Country">
+                </div>
+                <div>
+                    <label for="">Github Profile</label>
+                    <br>
+                    <input type="url" id="github" placeholder="Add github profile link">
+                </div>
+            </div>
+            <div id="btn">
+                <button class="btn1" type="button" onclick="change()">Save changes</button>
+                <button class="btn2" type="button" onclick="cancel()">Cancel changes</button>
+            </div>
+        </div>
+    </div>
+    <script src="../JS_Files/profile setting.js"></script>
+</body>
+</html>
